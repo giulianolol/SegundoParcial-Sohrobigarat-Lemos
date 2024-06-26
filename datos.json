@@ -1,0 +1,44 @@
+{
+    "jugador": [
+        {
+            "nombre": "puntos45",
+            "puntaje": 45,
+            "fecha": "dia4"
+        },
+        {
+            "nombre": "puntos46",
+            "puntaje": 46,
+            "fecha": "dia4"
+        },
+        {
+            "nombre": "3252",
+            "puntaje": 47,
+            "fecha": "dia453245"
+        },
+        {
+            "nombre": "PRUEBA",
+            "puntaje": 48,
+            "fecha": "dia453245"
+        },
+        {
+            "nombre": "Luis",
+            "puntaje": 49,
+            "fecha": "23/06/2024"
+        },
+        {
+            "nombre": "DALEEEE",
+            "puntaje": 50,
+            "fecha": "23/06/2024"
+        },
+        {
+            "nombre": "Aasdfsd",
+            "puntaje": 1000,
+            "fecha": "24/06/2024"
+        },
+        {
+            "nombre": "TUlis",
+            "puntaje": 10,
+            "fecha": "24/06/2024"
+        }
+    ]
+}
