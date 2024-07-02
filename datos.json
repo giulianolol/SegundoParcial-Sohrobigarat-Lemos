@@ -11,34 +11,62 @@
             "fecha": "dia4"
         },
         {
-            "nombre": "3252",
-            "puntaje": 47,
-            "fecha": "dia453245"
+            "nombre": "",
+            "puntaje": 30,
+            "fecha": "02/07/2024"
         },
         {
-            "nombre": "PRUEBA",
-            "puntaje": 48,
-            "fecha": "dia453245"
-        },
-        {
-            "nombre": "Luis",
-            "puntaje": 49,
-            "fecha": "23/06/2024"
-        },
-        {
-            "nombre": "DALEEEE",
-            "puntaje": 50,
-            "fecha": "23/06/2024"
-        },
-        {
-            "nombre": "Aasdfsd",
-            "puntaje": 1000,
-            "fecha": "24/06/2024"
-        },
-        {
-            "nombre": "TUlis",
+            "nombre": "",
             "puntaje": 10,
-            "fecha": "24/06/2024"
+            "fecha": "02/07/2024"
+        },
+        {
+            "nombre": "fsdf",
+            "puntaje": 0,
+            "fecha": "02/07/2024"
+        },
+        {
+            "nombre": "",
+            "puntaje": 0,
+            "fecha": "02/07/2024"
+        },
+        {
+            "nombre": "",
+            "puntaje": 10,
+            "fecha": "02/07/2024"
+        },
+        {
+            "nombre": "",
+            "puntaje": 30,
+            "fecha": "02/07/2024"
+        },
+        {
+            "nombre": "",
+            "puntaje": 40,
+            "fecha": "02/07/2024"
+        },
+        {
+            "nombre": "",
+            "puntaje": 150,
+            "fecha": "02/07/2024"
+        },
+        {
+            "nombre": "",
+            "puntaje": 0,
+            "fecha": "02/07/2024"
+        },
+        {
+            "nombre": "",
+            "puntaje": 20,
+            "fecha": "02/07/2024"
+        }
+    ],
+    "sonido": [
+        {
+            "estado_reproduccion": "1"
+        },
+        {
+            "nivel_volumen": 0.10000000000000003
         }
     ]
 }

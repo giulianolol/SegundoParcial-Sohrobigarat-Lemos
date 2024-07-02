@@ -52,11 +52,7 @@ class Puntaje():
     
     def set_puntaje(self, valor):
         
-        if valor == 10:
-            
-            self.puntaje += 10
-        
-        else: self.puntaje = valor
+        self.puntaje += valor
         
         return self.puntaje
     

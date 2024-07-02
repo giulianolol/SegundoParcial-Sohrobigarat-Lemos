@@ -8,4 +8,6 @@ pygame.init()
 
 screen = pygame.display.set_mode((SCREEN_RES))
 
+reproducir_musica_ambiente()
+
 main_menu(screen)

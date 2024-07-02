@@ -5,13 +5,20 @@ pygame.init()
 
 SCREEN_RES = (1500,940)
 
-BLACK = (0,0,0)
-WHITE = (255,255,255)
+NEGRO = (0,0,0)
+BLANCO = (255,255,255)
 RED = (255,0,0)
 LIGTH_RED = (227, 66, 51)
 GREEN = (0,255,0)
 LIGTH_GREEN = (215,252,212)
-BLUE = (0,0,255)
+AZUL = (0,0,255)
+CELESTE = (215,215,252)
+
+pygame.mixer.init()
+
+sonido_error = pygame.mixer.Sound("Assets\error.mp3")
+sonido_ambiente = pygame.mixer.Sound("Assets\sonido_ambiente.mp3")
+sonido_juego = pygame.mixer.Sound("Assets\sonido_juego.mp3")
 
 #Cargar Imagenes
 
@@ -30,6 +37,13 @@ fondo_pantalla_opciones_rect = fondo_pantalla_opciones.get_rect()
 fondo_pantalla_preguntas =pygame.image.load("Assets\ondo_pantalla_preguntas.png")
 fondo_pantalla_preguntas = pygame.transform.scale(fondo_pantalla_preguntas,(1500,940))
 fondo_pantalla_preguntas_rect = fondo_pantalla_preguntas.get_rect()
+
+fondo_pantalla_modficiar_vidas = pygame.image.load("Assets\ondo_pantalla_modificar_vidas.jpg")
+fondo_pantalla_modificar_vidas = pygame.transform.scale(fondo_pantalla_modficiar_vidas,(1500,940))
+fondo_pantalla_modificar_vidas_rect = fondo_pantalla_modficiar_vidas.get_rect()
+
+fondo_pantalla_agregar_preguntas = pygame.image.load("Assets\ondo_agregar_pregunta.jpg")
+fondo_pantalla_agregar_preguntas = pygame.transform.scale(fondo_pantalla_agregar_preguntas,(1500,940))
 
 difuminado = pygame.image.load("Assets\save.jpg")
 difuminado = pygame.transform.scale(difuminado, (1500,940))
