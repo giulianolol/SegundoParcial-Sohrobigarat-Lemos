@@ -25,7 +25,7 @@ def seleccionar_pregunta(preguntas:list):
     
     respuesta_correcta = preguntas[0]["respuesta_correcta"]
     
-    return (pregunta, respuesta_a, respuesta_b, respuesta_c, respuesta_correcta )
+    return (pregunta, respuesta_a, respuesta_b, respuesta_c, respuesta_correcta)
 
 def obtener_fuente(tamaño):
     
@@ -35,17 +35,17 @@ def jugar(screen, preguntas, vidas, puntaje_usuario):
     
     tiempo_inicial = time.time()
     
-    preguntas_y_resuestas = seleccionar_pregunta(preguntas)
+    preguntas_y_respuestas = seleccionar_pregunta(preguntas)
     
-    pregunta = preguntas_y_resuestas[0]
+    pregunta = preguntas_y_respuestas[0]
     
-    respuesta_a = preguntas_y_resuestas[1]
+    respuesta_a = preguntas_y_respuestas[1]
     
-    respuesta_b = preguntas_y_resuestas[2]
+    respuesta_b = preguntas_y_respuestas[2]
     
-    respuesta_c = preguntas_y_resuestas[3]
+    respuesta_c = preguntas_y_respuestas[3]
     
-    respuesta_correcta = preguntas_y_resuestas[4]
+    respuesta_correcta = preguntas_y_respuestas[4]
     
     cant_puntaje = puntaje_usuario
     
@@ -71,13 +71,13 @@ def jugar(screen, preguntas, vidas, puntaje_usuario):
         
             mouse_posicion_jugar = pygame.mouse.get_pos()
             
-            screen.fill(NEGRO)
+            #screen.fill(NEGRO)
             
             screen.blit(fondo_pantalla_preguntas, (0,0))
             
             txt_vidas = obtener_fuente(30).render(f"VIDAS: {vidas}", True, BLANCO)
             
-            screen.blit(txt_vidas, (20, 910) )
+            screen.blit(txt_vidas, (20, 910))
             
             txt_pregunta = obtener_fuente(20).render(pregunta, True, BLANCO)
         
@@ -347,8 +347,6 @@ def opciones(screen):
                             print("NO SE PUEDE SEGUIR BAJANDO EL VOLUMEN")
                             
             
-            print(mouse_posicion_opciones)
-            
             if event.type == pygame.QUIT:
                 
                 pygame.quit()
@@ -358,8 +356,6 @@ def opciones(screen):
             if event.type == pygame.MOUSEBUTTONDOWN:
                 
                 if btn_opciones_back.checkear_input(mouse_posicion_opciones):
-                    
-                    print(mouse_posicion_opciones)
                     
                     main_menu(screen)
     
@@ -446,15 +442,13 @@ def top_10(screen):
     
     x, y = 50 , 50
     
-    alutra_linea = 20 + 30
+    altura_linea = 20 + 30
     
     contador = 0
     
     json_ordenado = ordenar_json('datos.json', 'jugador', 'puntaje')
     
     top_10_json_ordenado = json_ordenado[:10]
-    
-    print(top_10_json_ordenado)
     
     while True:
         
@@ -476,8 +470,6 @@ def top_10(screen):
                 
                 if btn_volver.checkear_input(posicion_mouse):
                     
-                    print("ACAAASDASDA")
-                    
                     main_menu(screen)
         
         txt_title = obtener_fuente(70).render("TOP 10", True, BLANCO)
@@ -491,7 +483,7 @@ def top_10(screen):
             
             screen.blit(txt_jugador, (x,y_actual))
             
-            y_actual += alutra_linea
+            y_actual += altura_linea
 
         btn_volver.cambiar_color(posicion_mouse)
         btn_volver.actualizar(screen)
@@ -511,27 +503,6 @@ def leer_csv(ruta_archivo):
     
     return datos
 
-    
-def agregar_pregunta(screen):
-    
-    letra = "Hola :)"
-    txt_letra = obtener_fuente(75).render(letra, True, BLANCO)
-    while True:
-        
-        for event in pygame.event.get():
-            
-            if event.type == pygame.QUIT:
-                
-                pygame.quit()
-                
-                sys.exit()
-        
-        superficie_texto = obtener_fuente(35).render(letra,True,(255,255,255))
-                
-            
-        screen.blit(superficie_texto,screen(0,0))
-        pygame.display.update()
-
 def pedir_nombre(screen, puntaje):
      
     sonido_juego.stop()
@@ -542,13 +513,13 @@ def pedir_nombre(screen, puntaje):
         
         sonido_ambiente.play()
     
-      
     fecha_actual = datetime.datetime.today()
     fecha_actual = fecha_actual.strftime("%d/%m/%Y") 
     letra = ""
     txt_letra = obtener_fuente(75).render(letra, True, BLANCO)
     x = 140
     rect_letra = txt_letra.get_rect(center=(x,250))
+    
     while True:
         
         posicion_mouse = pygame.mouse.get_pos()
@@ -647,22 +618,6 @@ def ordenar_json(ruta_json, clave_json, clave_orden):
     jugadores_ordenados = sorted(archivo_json[clave_json], key=lambda x: x[clave_orden], reverse=True)
                 
     return jugadores_ordenados
-
-def contador(valor_inicial):
-    
-    tiempo_inicial = valor_inicial
-    
-    duracion_temporizador = 10
-    
-    tiempo_final = tiempo_inicial + duracion_temporizador
-    
-    while valor_inicial <= tiempo_final:
-        
-        tiempo_restante = int(tiempo_final - valor_inicial)
-        
-        print(tiempo_restante)
-    
-        time.sleep(1)
         
 def cargar_csv_lista(ruta):
     
@@ -691,7 +646,6 @@ def modificar_dato_pregunta(pregunta, clave):
         escritor = csv.DictWriter(archivo, fieldnames=lista_archivo[0].keys())
         escritor.writeheader()
         escritor.writerows(lista_archivo)
-
 
 def calcular_y_modificar_porcentaje_aciertos(pregunta):
     
@@ -738,7 +692,6 @@ def evaluar_sonido_json(ruta_json):
     estado_sonido = datos["sonido"][0]["estado_reproduccion"]
 
     return estado_sonido
-
 
 def escribir_json_sonido(valor_antiguo):
 

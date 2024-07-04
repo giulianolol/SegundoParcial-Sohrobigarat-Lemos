@@ -7,8 +7,8 @@ pregunta,respuesta_a,respuesta_b,respuesta_c,respuesta_correcta,porcentaje_acier
 ¿En qué ciudad se encuentra el Obelisco?,Mendoza,Córdoba,Buenos Aires,c,100,0,1,1
 ¿Qué músico argentino fue el líder de la banda Soda Stereo?,Charly García,Fito Páez,Gustavo Cerati,c,25,3,1,4
 "¿Quién es considerado el ""Padre de la Patria"" en Argentina?",José de San Martín,Manuel Belgrano,Bartolomé Mitre,a,100,0,1,1
-¿Qué bebida tradicional argentina se toma en una calabaza con una bombilla?,Café,Té,Mate,c,100,0,1,1
-¿En qué provincia se encuentra la ciudad de Mar del Plata?,Buenos Aires,Córdoba,Santa Fe,a,100,0,1,1
+¿Qué bebida tradicional argentina se toma en una calabaza con una bombilla?,Café,Té,Mate,c,100,0,2,2
+¿En qué provincia se encuentra la ciudad de Mar del Plata?,Buenos Aires,Córdoba,Santa Fe,a,33,2,1,3
 ¿Quién escribió el poema épico 'Martín Fierro'?,José Hernández,Esteban Echeverría,Ricardo Güiraldes,a,33,2,1,3
 "¿Qué famosa cantante argentina es conocida como ""La Voz del Tango""?",Mercedes Sosa,Virginia Luque,Libertad Lamarque,c,66,1,2,3
 ¿En qué ciudad se celebra anualmente el Festival Nacional de la Vendimia?,Salta,Mendoza,San Juan,b,100,0,2,2

@@ -59,6 +59,11 @@
             "nombre": "",
             "puntaje": 20,
             "fecha": "02/07/2024"
+        },
+        {
+            "nombre": "",
+            "puntaje": 0,
+            "fecha": "03/07/2024"
         }
     ],
     "sonido": [
