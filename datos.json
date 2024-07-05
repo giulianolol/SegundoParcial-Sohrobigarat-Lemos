@@ -64,11 +64,16 @@
             "nombre": "",
             "puntaje": 0,
             "fecha": "03/07/2024"
+        },
+        {
+            "nombre": "Prueba",
+            "puntaje": 10,
+            "fecha": "04/07/2024"
         }
     ],
     "sonido": [
         {
-            "estado_reproduccion": "1"
+            "estado_reproduccion": "0"
         },
         {
             "nivel_volumen": 0.10000000000000003
